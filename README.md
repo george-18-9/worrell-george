@@ -1,0 +1,32 @@
+UNIVERSIDAD TECNOLÓGICA DE PANAMÁ
+FACULTAD DE INGENIERÍA DE SISTEMAS COMPUTACIONALES
+DEPARTAMENTO DE PROGRAMACIÓN DE COMPUTADORAS LICENCIATURA EN DESARROLLO DE SOFTWARE
+ 
+ 
+Desarrollo de Software 5
+Portafolio
+
+
+Estudiante:
+George Worrell
+8-1040-800
+
+ 
+ 
+ 
+Facilitador: 
+Ing. Erick Agrazal 
+
+
+
+
+Fecha:
+12/19/2025
+
+
+
+
+
+
+Link del proyecto final: 
+
