@@ -1,0 +1,227 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+  background-color: #111;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  color: #ff6b6b;
+  margin-bottom: 25px;
+}
+
+.country-name {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* ====== HERO ====== */
+.hero {
+  background-color: #222;
+  border-radius: 15px;
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Bandera principal (Panamá grande) */
+.main-flag-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.main-flag-box .flag {
+  width: 300px;
+  height: 200px;
+  border: 3px solid #fff;
+}
+
+/* ====== Banderas inferiores ====== */
+.flags-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.flag-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flag-box .flag {
+  width: 150px;
+  height: 100px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  position: relative;
+}
+
+/* ==========================================================
+   🇵🇦 PANAMÁ
+   ========================================================== */
+.flag.pa {
+  position: relative;
+  background: white;
+  overflow: hidden;
+}
+
+/* cuadrante superior derecho rojo */
+.flag.pa::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  background: red;
+}
+
+/* cuadrante inferior izquierdo azul */
+.flag.pa::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  background: blue;
+}
+
+/* punto azul (arriba izquierda) */
+.flag.pa .dot-blue {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 50%;
+}
+
+/* punto rojo (abajo derecha) */
+.flag.pa .dot-red {
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+}
+
+/* ==========================================================
+   🇧🇷 BRASIL
+   ========================================================== */
+.flag.br {
+  background: green;
+  position: relative;
+}
+.flag.br::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  background: yellow;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0 50%);
+}
+.flag.br::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 40%;
+  background: blue;
+  border-radius: 50%;
+  z-index: 2;
+}
+.flag.br .circle-line {
+  position: absolute;
+  top: 48%;
+  left: 32%;
+  width: 36%;
+  height: 5%;
+  background: white;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+/* ==========================================================
+   🇨🇷 COSTA RICA
+   ========================================================== */
+.flag.cr {
+  background: linear-gradient(
+    to bottom,
+    blue 15%,
+    white 15% 30%,
+    red 30% 70%,
+    white 70% 85%,
+    blue 85%
+  );
+}
+
+/* ==========================================================
+   🇺🇸 ESTADOS UNIDOS
+   ========================================================== */
+.flag.us {
+  background: repeating-linear-gradient(
+    to bottom,
+    red 0%,
+    red 7.69%,
+    white 7.69%,
+    white 15.38%
+  );
+  position: relative;
+}
+
+.flag.us::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 54%;
+  background: navy;
+  z-index: 1;
+}
+
+.flag.us .stars {
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  width: 45%;
+  height: 45%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 6px;
+  z-index: 2;
+}
+
+.flag.us .stars div {
+  width: 7px;
+  height: 7px;
+  background: white;
+  border-radius: 50%;
+  justify-self: center;
+  align-self: center;
+}
